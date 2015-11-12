@@ -1,0 +1,8 @@
+*.pyc
+.DS_Store
+evaluation/edit
+/semsig.out
+/synsets_partial_kore50.txt
+/synsets_test.txt
+/synsets_kore50.txt
+/nohup.out

@@ -1,0 +1,11 @@
+human	r	environment
+human	r	house
+human	r	cheese
+human	r	mouse
+cat	r	mouse
+cat	r	human
+computer	r	keyboard
+computer	r	mouse2
+computer	r	human
+mouse	r	cheese
+cheese	r	human

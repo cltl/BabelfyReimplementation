@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2014-11-27"/>
+  <raw>David and Victoria named their children Brooklyn , Romeo , Cruz , and Harper Seven .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">David</wf>
+    <wf id="w2" length="3" offset="5" sent="1">and</wf>
+    <wf id="w3" length="8" offset="9" sent="1">Victoria</wf>
+    <wf id="w4" length="5" offset="18" sent="1">named</wf>
+    <wf id="w5" length="5" offset="24" sent="1">their</wf>
+    <wf id="w6" length="8" offset="30" sent="1">children</wf>
+    <wf id="w7" length="8" offset="39" sent="1">Brooklyn</wf>
+    <wf id="w8" length="1" offset="48" sent="1">,</wf>
+    <wf id="w9" length="5" offset="50" sent="1">Romeo</wf>
+    <wf id="w10" length="1" offset="56" sent="1">,</wf>
+    <wf id="w11" length="4" offset="58" sent="1">Cruz</wf>
+    <wf id="w12" length="1" offset="63" sent="1">,</wf>
+    <wf id="w13" length="3" offset="65" sent="1">and</wf>
+    <wf id="w14" length="6" offset="69" sent="1">Harper</wf>
+    <wf id="w15" length="5" offset="76" sent="1">Seven</wf>
+    <wf id="w16" length="1" offset="82" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="David_Copperfield" resource="reranker"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Victoria_Beckham" resource="reranker"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t7"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Brooklyn, Victoria" resource="reranker"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t9"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="--NME--" resource="reranker"/>
+      </externalReferences>
+    </entity>=
+    <entity id="t5">
+      <references>
+        <span>
+          <target id="t14"/>
+          <target id="t15"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="--NME--" resource="reranker"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

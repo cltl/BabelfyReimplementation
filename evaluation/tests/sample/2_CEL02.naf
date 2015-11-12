@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2014-11-27"/>
+  <raw>David and Victoria added spice to their marriage .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">David</wf>
+    <wf id="w2" length="3" offset="5" sent="1">and</wf>
+    <wf id="w3" length="8" offset="9" sent="1">Victoria</wf>
+    <wf id="w4" length="5" offset="18" sent="1">added</wf>
+    <wf id="w5" length="5" offset="24" sent="1">spice</wf>
+    <wf id="w6" length="2" offset="30" sent="1">to</wf>
+    <wf id="w7" length="5" offset="33" sent="1">their</wf>
+    <wf id="w8" length="8" offset="39" sent="1">marriage</wf>
+    <wf id="w9" length="1" offset="48" sent="1">.</wf>
+  </text>
+</NAF>
