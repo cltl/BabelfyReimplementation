@@ -228,14 +228,13 @@ def get_graph_node_for_sense_fragment_combination(Gr, v, f):
 	return None
 
 if __name__ == '__main__':
-    #client = MongoClient()
-    #init_db()
+    client = MongoClient()
+    init_db()
     all_senses=[]
     path="../kore50.naf/"
     for filename in os.listdir(path):
 	my_parser = KafNafParser(path + filename)
-        F = get_candidates(my_parser.get_raw()) # Second argument is a string of characters. Add 'e' for entities (always there), 'n' for nouns, 'v' for verbs, 'a' for adjectives
-#	print F
+        F = get_candidates(my_parser.get_raw())
         for f in F:
             for sense in F[f]["senses"]:
 	        sense=create_bn_synset(sense)
