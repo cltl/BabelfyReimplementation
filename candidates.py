@@ -14,14 +14,14 @@ import urllib
 from pymongo import MongoClient
 import re, urlparse
 import nltk
-from nltk.stem.wordnet import WordNetLemmatizer
 import re
+from nltk.tag import StanfordPOSTagger
 
 host="localhost"
 port=9000
 lang="en"
 
-lmtzr = WordNetLemmatizer()
+st=StanfordPOSTagger('/scratch/fii800/BabelfyReimplementation/stanford-postagger-2014-06-16/models/english-bidirectional-distsim.tagger', path_to_jar='/scratch/fii800/BabelfyReimplementation/stanford-postagger-2014-06-16/stanford-postagger-3.4.jar')
 
 def init_db():
     global db, adjct_coll, adjctr_coll, adjctw_coll, semsig_coll, name_coll
@@ -119,22 +119,18 @@ def get_entity_mention(ent, my_parser):
         res=(" ").join(words)
         return res
 
-def get_nouns(raw_text, wt):
+def get_nouns(raw_text):
     nouns={}
-    tokens=nltk.word_tokenize(raw_text)
-    tags = nltk.pos_tag(tokens)
+    tokens=raw_text.split()
+    tags = st.tag(tokens)
     tags2 = {}
     words={}
     c=0
-    print tags, wt
     for t in tags:
 	c+=1
 	words[str(c)]=t[0]
 	tags2[str(c)]=t[1]
-        if 'n' in wt and t[1] in ["NN", "NNP", "NNS", "NNPS"]:
-	    print t[0], "noun"
-            nouns[str(c)]=lmtzr.lemmatize(t[0], pos='n')
-	elif t[1] in ["NNP", "NNPS"]:
+        if t[1] in ["NN", "NNP", "NNS", "NNPS"]:
             nouns[str(c)]=t[0]
 	    
     return c, words, nouns, tags2
@@ -208,30 +204,19 @@ def test_fragments_with_length(l, noun_token, max_value, words, tags, my_tag):
         right+=1
     return ret
 
-def get_candidates(raw_text, wt):
+def get_candidates(raw_text):
     joint_json = {}
-    max_token, words, nouns, tags = get_nouns(raw_text, wt)
+    max_token, words, nouns, tags = get_nouns(raw_text)
+    print nouns
+    sys.exit(0)
     for noun in nouns:
         l=5
-	to_insert = False
         while l>0:
             result=test_fragments_with_length(l, noun, max_token, words, tags, "n")
-            if len(result)>1 or (len(result) and to_insert):
+            if len(result)>1:
 		for r in result:
                 	joint_json[r["fkey"]]={"phrase": r['phrase'], "senses": r['senses'], "type": r['wtype']}
-	    elif len(result) and not to_insert:
-		to_insert=True
 	    l-=1
-    if 'v' in wt or 'a' in wt:
-        adj, verbs = get_adjectives_and_verbs(raw_text, wt)
-        for a in adj:
-	    r=test_phrase(adj[a], 'a')
-	    if r:
-	        joint_json[a]={"phrase": adj[a], "senses": r, "type": 'a'}
-        for v in verbs:
-	    r=test_phrase(verbs[v], 'v')
-	    if r:
-	        joint_json[v]={"phrase": verbs[v], "senses": r, "type": 'v'}
     return joint_json
 
 def get_graph_node_for_sense_fragment_combination(Gr, v, f):
@@ -243,13 +228,13 @@ def get_graph_node_for_sense_fragment_combination(Gr, v, f):
 	return None
 
 if __name__ == '__main__':
-    client = MongoClient()
-    init_db()
+    #client = MongoClient()
+    #init_db()
     all_senses=[]
-    path="../../kore50.naf/"
+    path="../kore50.naf/"
     for filename in os.listdir(path):
 	my_parser = KafNafParser(path + filename)
-        F = get_candidates(my_parser.get_raw(), 'ne') # Second argument is a string of characters. Add 'e' for entities (always there), 'n' for nouns, 'v' for verbs, 'a' for adjectives
+        F = get_candidates(my_parser.get_raw()) # Second argument is a string of characters. Add 'e' for entities (always there), 'n' for nouns, 'v' for verbs, 'a' for adjectives
 #	print F
         for f in F:
             for sense in F[f]["senses"]:
