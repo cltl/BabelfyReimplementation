@@ -60,9 +60,9 @@ def create_bn_synset(v):
     v="bn:" + v
     return v
 
-def test_phrase(query, t):
+def test_phrase(query):
     print query
-    url = "http://%s:%d/text/%s/%s/%s" %(host, port, lang, query,t)
+    url = "http://%s:%d/text/%s/%s" %(host, port, lang, query)
     url = iriToUri(url)
     f = urllib.urlopen(url)
     if f.getcode() == 200:
@@ -71,7 +71,7 @@ def test_phrase(query, t):
     else:
         return None
 
-def partial_test_phrase(query, t):
+def partial_test_phrase(query):
     query=query.replace(" ", "_")
     results = name_coll.find({'$text': {'$search': query}})
     ret=[]
@@ -149,7 +149,7 @@ def get_adjectives_and_verbs(raw_text, wt):
 	    verbs[str(c)]=lmtzr.lemmatize(t[0], pos='v')
     return adj,verbs
 
-def test_fragments_with_length(l, noun_token, max_value, words, tags, my_tag):
+def test_fragments_with_length(l, noun_token, max_value, words, tags):
     t = int(noun_token)
     min_value=1
     left=t-l+1
@@ -175,29 +175,16 @@ def test_fragments_with_length(l, noun_token, max_value, words, tags, my_tag):
         for word in f:
 	    if tags[str(word)] not in ["NNP", "NNPS"]:
 		e=False
-	    if "NN" in tags[str(word)]: # noun or proper noun
-		x='n'
-	    elif "VB" in tags[str(word)]: # verb
-		x='v'
-	    elif "JJ" in tags[str(word)]: # adjective
-		x='a'
-	    elif "RB" in tags[str(word)]: # adverb
-		x='r'
-	    else:
-		x=None
-	    if x:
-                fragment.append(lmtzr.lemmatize(words[str(word)], x))
-	    else:
-		fragment.append(lmtzr.lemmatize(words[str(word)]))
+            fragment.append(words[str(word)])
         phrase=" ".join(fragment)
 #        result=test_phrase(phrase, my_tag)
 	if e==True: # NE
 		print "NE", phrase
-		result=partial_test_phrase(phrase, my_tag)
-        	if result or l==1:
+		result=partial_test_phrase(phrase)
+        	if result:
             	    ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f), 'wtype': 'e'})
 	else: # Noun
-		result=test_phrase(phrase, my_tag)
+		result=test_phrase(phrase)
 		if result:
 		    ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f), 'wtype': 'n'})
         left+=1
@@ -208,12 +195,11 @@ def get_candidates(raw_text):
     joint_json = {}
     max_token, words, nouns, tags = get_nouns(raw_text)
     print nouns
-    sys.exit(0)
     for noun in nouns:
         l=5
         while l>0:
-            result=test_fragments_with_length(l, noun, max_token, words, tags, "n")
-            if len(result)>1:
+            result=test_fragments_with_length(l, noun, max_token, words, tags)
+            if len(result)>0:
 		for r in result:
                 	joint_json[r["fkey"]]={"phrase": r['phrase'], "senses": r['senses'], "type": r['wtype']}
 	    l-=1
@@ -228,10 +214,8 @@ def get_graph_node_for_sense_fragment_combination(Gr, v, f):
 	return None
 
 if __name__ == '__main__':
-    client = MongoClient()
-    init_db()
     all_senses=[]
-    path="../kore50.naf/"
+    path="../kore50-naf.gold/"
     for filename in os.listdir(path):
 	my_parser = KafNafParser(path + filename)
         F = get_candidates(my_parser.get_raw())
@@ -240,7 +224,9 @@ if __name__ == '__main__':
 	        sense=create_bn_synset(sense)
                 if sense not in all_senses:
                     all_senses.append(sense)
+	break
+    print all_senses
 #	break
-    w = open("remaining_kore50.txt", "w")
+    w = open("test.txt", "w")
     w.write("\n".join(all_senses))
     w.close()
