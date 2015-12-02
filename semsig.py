@@ -19,8 +19,6 @@ from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 
 import numpy as np
-from semsig2 import choice
-
 
 _log = logging.getLogger('semsig')
  
@@ -89,6 +87,22 @@ def get_reverse_adjacents_many(ids):
 @lru_cache(maxsize=1000000)
 def get_step_cache(u):
     return dict()
+
+
+def choice(arr, size=None, p=None):
+    if not isinstance(size, (tuple, list)): 
+        size = (size,)
+    if len(arr) <= 0:
+        raise ValueError('Nothing to choose from.')
+    cdf = np.zeros_like(p)
+    cdf[0] = p[0]
+    for i in range(1, len(p)):
+        cdf[i] = cdf[i-1] + p[i]
+    assert abs(cdf[-1] - 1) < 0.00001
+    num = np.random.rand(*size)
+    ind = np.searchsorted(cdf, num)
+#     print repr(ind.flatten())
+    return np.asarray(arr)[ind.flatten()].reshape(size)
 
 
 def next_steps(v):
