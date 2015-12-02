@@ -2,6 +2,17 @@
 
 This is the Git repository of our experiment on reimplementing Babelfy.
 
-* Setup
+Setup
+======
 
-Please go to https://github.com/minhlab/babelnet-lookup and setup your own BabelNet API endpoint (useful for non-Java programs).
+1. Setup local BabelNet endpoint - Please go to https://github.com/minhlab/babelnet-lookup and setup your own BabelNet API endpoint (useful for non-Java programs).
+
+2. Populate your local database (we use mongodb), in order to access all BabelNet data easily and perform lookups on partial matches. To do this, run semsig.sh with argument phase1.
+ 
+3. Generate candidates (run python candidates.py)
+ 
+4. Generate semantic signature and the other database structures (run semsig.sh with phase2 and phase3 as arguments).
+
+5. Do the Babelfy disambiguation algorithm (run python disambiguate.py)
+
+6. Evaluate !
