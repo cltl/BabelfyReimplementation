@@ -9,7 +9,7 @@ Setup
 
 2. Populate your local database (we use mongodb), in order to access all BabelNet data easily and perform lookups on partial matches. To do this, run semsig.sh with argument phase1. Make sure you have the path to relations.txt setup correctly.
 
-3. Run semsig.sh with argument phase2, to generate the weights based on triangular relations. -> Described in Section 5 of the paper
+3. Run semsig.sh with argument phase2, to generate weights based on triangular relations. These weights are useful for the building of semantic signature later. -> Described in Section 5 of the paper
  
 3. Generate candidates (run python candidates.py) -> Section 6 of the paper
  
