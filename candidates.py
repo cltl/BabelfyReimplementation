@@ -61,7 +61,6 @@ def create_bn_synset(v):
     return v
 
 def test_phrase(query):
-    print query
     url = "http://%s:%d/text/%s/%s" %(host, port, lang, query)
     url = iriToUri(url)
     f = urllib.urlopen(url)
@@ -77,6 +76,7 @@ def partial_test_phrase(query):
     ret=[]
 #    regex = re.compile('\(.+?\)')
     for r in results:
+	print r
 	x=0.0
 	for sense in r["senses"]:
 #	    out_s = regex.sub('', sense)
@@ -171,10 +171,10 @@ def test_fragments_with_length(l, noun_token, max_value, words, tags):
         # Fragment is OK. Test it on BabelNet now:
         phrase=""
         fragment=[]
-	e=True
+	e=False
         for word in f:
-	    if tags[str(word)] not in ["NNP", "NNPS"]:
-		e=False
+	    if tags[str(word)] in ["NNP", "NNPS"]:
+		e=True
             fragment.append(words[str(word)])
         phrase=" ".join(fragment)
 #        result=test_phrase(phrase, my_tag)
@@ -215,10 +215,13 @@ def get_graph_node_for_sense_fragment_combination(Gr, v, f):
 
 if __name__ == '__main__':
     all_senses=[]
+    client = MongoClient()
+    init_db()
     path="../kore50-naf.gold/"
     for filename in os.listdir(path):
 	my_parser = KafNafParser(path + filename)
         F = get_candidates(my_parser.get_raw())
+	print F
         for f in F:
             for sense in F[f]["senses"]:
 	        sense=create_bn_synset(sense)
