@@ -11,6 +11,7 @@ Setup
 Duration: 100 min
 
 3. Run semsig.sh with argument phase2, to generate weights based on triangular relations. These weights are useful for the building of semantic signature later. -> Described in Section 5 of the paper
+Duration: 7.5 hours
  
 3. Generate candidates (run python candidates.py) -> Section 6 of the paper
  
