@@ -12,11 +12,14 @@ Duration: 100 min
 
 3. Run semsig.sh with argument phase2, to generate weights based on triangular relations. These weights are useful for the building of semantic signature later. -> Described in Section 5 of the paper
 Duration: 7.5 hours
- 
-3. Generate candidates (run python candidates.py) -> Section 6 of the paper
- 
-4. Generate semantic signature database structure (run semsig.sh with phase3 as an argument). -> Algorithm 1 in the paper, section 5
 
-5. Do the Babelfy disambiguation algorithm (run python disambiguate.py) -> Algorithm 2 and 3 in the paper, section 7
+4. Generate name_coll database collection, which contains all names from BabelNet. This is essential for the process of generating candidates using partial matching. To populate this collection run ./genrel.sh (make sure you adjust the settings to your local environment).
+Duration? : start 1:15am
+ 
+5. Generate candidates (run python candidates.py) -> Section 6 of the paper
+ 
+6. Generate semantic signature database structure (run semsig.sh with phase3 as an argument). -> Algorithm 1 in the paper, section 5
 
-6. Evaluate !
+7. Do the Babelfy disambiguation algorithm (run python disambiguate.py) -> Algorithm 2 and 3 in the paper, section 7
+
+8. Evaluate !
