@@ -16,6 +16,7 @@ import re, urlparse
 import nltk
 import re
 from nltk.tag import StanfordPOSTagger
+import time
 
 host="localhost"
 port=9000
@@ -72,11 +73,11 @@ def test_phrase(query):
 
 def partial_test_phrase(query):
     query=query.replace(" ", "_")
-    results = name_coll.find({'$text': {'$search': query}})
+    queryjson={'$text': {'$search': query}}
+    results = name_coll.find(queryjson)
     ret=[]
 #    regex = re.compile('\(.+?\)')
     for r in results:
-	print r
 	x=0.0
 	for sense in r["senses"]:
 #	    out_s = regex.sub('', sense)
@@ -179,8 +180,9 @@ def test_fragments_with_length(l, noun_token, max_value, words, tags):
         phrase=" ".join(fragment)
 #        result=test_phrase(phrase, my_tag)
 	if e==True: # NE
-		print "NE", phrase
 		result=partial_test_phrase(phrase)
+
+		time.sleep(0.05)
         	if result:
             	    ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f), 'wtype': 'e'})
 	else: # Noun
@@ -219,17 +221,15 @@ if __name__ == '__main__':
     init_db()
     path="../kore50-naf.gold/"
     for filename in os.listdir(path):
+	print filename
 	my_parser = KafNafParser(path + filename)
         F = get_candidates(my_parser.get_raw())
-	print F
         for f in F:
             for sense in F[f]["senses"]:
 	        sense=create_bn_synset(sense)
                 if sense not in all_senses:
                     all_senses.append(sense)
-	break
-    print all_senses
-#	break
-    w = open("test.txt", "w")
+    print "All synsets read. Now writing to file..."
+    w = open("synsets.data", "w")
     w.write("\n".join(all_senses))
     w.close()
