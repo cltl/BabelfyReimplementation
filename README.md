@@ -14,7 +14,7 @@ Duration: 100 min
 Duration: 7.5 hours
 
 4. Generate name_coll database collection, which contains all names from BabelNet. This is essential for the process of generating candidates using partial matching. To populate this collection run ./genrel.sh (make sure you adjust the settings to your local environment).
-Duration? : start 1:15am
+Duration : 50 min
  
 5. Generate candidates (run python candidates.py) -> Section 6 of the paper
  
