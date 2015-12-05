@@ -16,7 +16,10 @@ Duration: 7.5 hours
 4. Generate name_coll database collection, which contains all names from BabelNet. This is essential for the process of generating candidates using partial matching. To populate this collection run ./genrel.sh (make sure you adjust the settings to your local environment).
 Duration : 50 min
  
+------- The steps 1-4 need to be executed once for good! --------
+
 5. Generate candidates (run python candidates.py) -> Section 6 of the paper
+Duration: 17 mins
  
 6. Generate semantic signature database structure (run semsig.sh with phase3 as an argument). -> Algorithm 1 in the paper, section 5
 
