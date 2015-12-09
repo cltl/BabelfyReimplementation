@@ -13,10 +13,7 @@ from KafNafParserPy import *
 import urllib
 from pymongo import MongoClient
 import re, urlparse
-import nltk
-import re
 from nltk.tag import StanfordPOSTagger
-import time
 
 host="localhost"
 port=9000
@@ -88,16 +85,6 @@ def partial_test_phrase(query):
 	    ret.append(r["_id"])
     return ret
 
-def is_entity(query):
-    url = "http://%s:%d/%s/type" %(host, port, query)
-    url = iriToUri(url)
-    f = urllib.urlopen(url)
-    if f.getcode() == 200:
-        lines = f.read().strip().split("\n")
-        return lines[0]=="ENTITY"
-    else:
-	print "error"
-        return None   
 
 def get_dbpedia_url(query):
     url = "http://%s:%d/synset/%s/dbpedia_uri/en" %(host, port, query)
@@ -135,20 +122,6 @@ def get_nouns(raw_text):
             nouns[str(c)]=t[0]
 	    
     return c, words, nouns, tags2
-
-def get_adjectives_and_verbs(raw_text, wt):
-    tokens=nltk.word_tokenize(raw_text)
-    tags = nltk.pos_tag(tokens)
-    c=0
-    adj={}
-    verbs={}
-    for t in tags:
-	c+=1
-        if 'a' in wt and t[1] in ["JJ", "JJS", "JJR"]:
-            adj[str(c)]=lmtzr.lemmatize(t[0], pos='a')
-	elif 'v' in wt and "VB" in t[1]:
-	    verbs[str(c)]=lmtzr.lemmatize(t[0], pos='v')
-    return adj,verbs
 
 def test_fragments_with_length(l, noun_token, max_value, words, tags):
     t = int(noun_token)

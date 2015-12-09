@@ -19,6 +19,8 @@ host="localhost"
 port=9000
 lang="en"
 
+st=StanfordPOSTagger('/scratch/fii800/BabelfyReimplementation/stanford-postagger-2014-06-16/models/english-bidirectional-distsim.tagger', path_to_jar='/scratch/fii800/BabelfyReimplementation/stanford-postagger-2014-06-16/stanford-postagger-3.4.jar')
+
 def init_db():
     global db, adjct_coll, adjctr_coll, adjctw_coll, semsig_coll, name_coll
     db = client['semsig-db']
@@ -54,8 +56,8 @@ def create_bn_synset(v):
     v="bn:" + v
     return v
 
-def test_phrase(query, t):
-    url = "http://%s:%d/text/%s/%s/%s" %(host, port, lang, query,t)
+def test_phrase(query):
+    url = "http://%s:%d/text/%s/%s/%s" %(host, port, lang, query)
     url = iriToUri(url)
     f = urllib.urlopen(url)
     if f.getcode() == 200:
@@ -69,12 +71,12 @@ def partial_test_phrase(query):
     results = name_coll.find({'$text': {'$search': query}})
     ret=[]
     for r in results:
-#        x=0.0
-#        for sense in r["senses"]:
-#            if query in sense:
-#                x+=1.0
-#        if x/len(r["senses"])>=0.5:
-         ret.append(r["_id"])
+        x=0.0
+        for sense in r["senses"]:
+            if query in sense:
+                x+=1.0
+        if x/len(r["senses"])>=0.5:
+	    ret.append(r["_id"])
     return ret
 
 def is_entity(query):
@@ -110,27 +112,24 @@ def get_entity_mention(ent, my_parser):
         res=(" ").join(words)
         return res
 
-def get_nouns(parser):
+def get_nouns(raw_text):
     nouns={}
-    terms=[]
-    for term in parser.get_terms():
-	target_ids=term.get_span().get_span_ids()
-    	term_text=[]
-	for tid in target_ids:
-            term_text.append(parser.get_token(tid).get_text())
-        res=(" ").join(term_text)
-	terms.append(res)
-    tags = st.tag(terms)
-    c=0
+    tokens=raw_text.split()
+    tags = st.tag(tokens)
+    tags2 = {}
     words={}
-    for t in tags[0]:
-        c+=1
-        words[str(c)]=t[0]
+    c=0
+    for t in tags:
+	c+=1
+	words[str(c)]=t[0]
+	tags2[str(c)]=t[1]
         if t[1] in ["NN", "NNP", "NNS", "NNPS"]:
             nouns[str(c)]=t[0]
-    return c, words, nouns
+	    
+    return c, words, nouns, tags2
 
-def test_fragments_with_length(l, noun_token, max_value, words):
+
+def test_fragments_with_length(l, noun_token, max_value, words, tags):
     t = int(noun_token)
     min_value=1
     left=t-l+1
@@ -148,36 +147,46 @@ def test_fragments_with_length(l, noun_token, max_value, words):
         while temp<=right:
             f.append(str(temp))
             temp+=1
-
+        
         # Fragment is OK. Test it on BabelNet now:
         phrase=""
         fragment=[]
+	e=False
         for word in f:
-        	fragment.append(words[str(word)])
+	    if tags[str(word)] in ["NNP", "NNPS"]:
+		e=True
+            fragment.append(words[str(word)])
         phrase=" ".join(fragment)
-        result=partial_test_phrase(phrase)
-	if result:
-		ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f)})
+#        result=test_phrase(phrase, my_tag)
+	if e==True: # NE
+		result=partial_test_phrase(phrase)
+
+		time.sleep(0.05)
+        	if result:
+            	    ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f), 'wtype': 'e'})
+	else: # Noun
+		result=test_phrase(phrase)
+		if result:
+		    ret.append({'phrase': phrase, 'senses': result, 'fkey': "-".join(f), 'wtype': 'n'})
         left+=1
         right+=1
     return ret
 
-# Deprecated
-"""
-def identify_candidates(my_parser):
-    raw_text = my_parser.get_raw()
+def get_candidates(raw_text):
     joint_json = {}
     max_token, words, nouns, tags = get_nouns(raw_text)
+    print nouns
     for noun in nouns:
         l=5
         while l>0:
             result=test_fragments_with_length(l, noun, max_token, words, tags)
-            if result is not None:
-                phrase, senses, key, ent_bool = result
-                joint_json[key]={"phrase": phrase, "senses": senses, "entity": ent_bool}
-            l-=1
+            if len(result)>0:
+		for r in result:
+                	joint_json[r["fkey"]]={"phrase": r['phrase'], "senses": r['senses'], "type": r['wtype']}
+	    l-=1
     return joint_json
-"""
+
+
 
 def get_graph_node_for_sense_fragment_combination(Gr, v, f):
     h2 = list(n for n,d in Gr.nodes_iter(data=True) if d['sense']==v and d['fragment']==f)
@@ -298,27 +307,17 @@ def densest_subgraph(F, G, mu):
 	    F_star=F
     return G_star, F_star
 
-def get_candidates(parser):
-    joint_json = {}
-    max_token, words, nouns = get_nouns(parser)
-    for noun in nouns:
-        l=5
-        while l>0:
-            result=test_fragments_with_length(l, noun, max_token, words)
-            if len(result):
-                for r in result:
-                        joint_json[r["fkey"]]={"phrase": r['phrase'], "senses": r['senses']}
-            l-=1
-    return joint_json
 
 #sense_weights={} # past: sense_scores
 #sense_degrees={} # past: sense_scores
 #fragment_total_scores={} # this is the divisor in the scores computation equation
 sense_scores={}
-st = POSTagger('stanford-postagger-2014-06-16/models/english-bidirectional-distsim.tagger', 'stanford-postagger-2014-06-16/stanford-postagger.jar')
+
 
 if __name__ == '__main__':
+    all_senses=[]
     client = MongoClient()
+    init_db()
     if len(sys.argv)<2:
 	print "Too little arguments. Please add 'wsd' or 'el' to choose your task!"
 	sys.exit()
@@ -329,24 +328,22 @@ if __name__ == '__main__':
         mu=5 # Allowed ambiguity level
         theta=0.0 # score boundary
 
-    path="/home/fii800/kore50-naf/"
-    out_path="/home/fii800/proc_kore50/"
-    all_senses=[]
+    path="../kore50-naf.gold/"
+    out_path="../proc_kore50/"
     for filename in os.listdir(path):
 	
 	my_parser = KafNafParser(path + filename)
 	print filename
 	output = out_path + filename
-	init_db()
 
-	F = get_candidates(my_parser) # Second argument is a string of characters. Add 'e' for entities (always there), 'n' for nouns, 'v' for verbs, 'a' for adjectives
+	F = get_candidates(my_parser.get_raw()) 	
 	for f in F:
 		for sense in F[f]["senses"]:
+			sense=create_bn_synset(sense)
 			if sense not in all_senses:
 				all_senses.append(sense)		
-	continue
-        G=nx.DiGraph() # Create empty networkx Graph
 
+        G=nx.DiGraph() # Create empty networkx Graph
 
 	sense_scores={}
 	
