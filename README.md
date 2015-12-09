@@ -21,6 +21,7 @@ Duration: 7.5 hours
 Duration: 17 mins
  
 6. Generate semantic signature database structure (run `semsig.sh phase3`). -> Algorithm 1 in the paper, section 5
+Duration: ~3 days
 
 7. Do the Babelfy disambiguation algorithm (run python disambiguate.py) -> Algorithm 2 and 3 in the paper, section 7
 
