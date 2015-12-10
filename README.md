@@ -24,5 +24,6 @@ Duration: 17 mins
 Duration: ~3 days
 
 7. Do the Babelfy disambiguation algorithm (run python disambiguate.py) -> Algorithm 2 and 3 in the paper, section 7
+Duration: 10 hours
 
 8. Evaluate !
