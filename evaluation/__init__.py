@@ -76,18 +76,18 @@ def eval_file(tar, ref, tar_resource, ref_resource):
     print tar_dict
     ref_dict = dict(get_extrefs(ref, ref_resource))
     print ref_dict
-    correct = sum(1 for span in tar_dict 
+    dis_correct = sum(1 for span in tar_dict
                   if span in ref_dict and 
-                  tar_dict[span] == ref_dict[span])
-    wrong = sum(1 for span in tar_dict 
-                if span not in ref_dict or 
-                tar_dict[span] != ref_dict[span])
-    span_correct = sum(1 for span in tar_dict 
+                  tar_dict[span] == ref_dict[span] and 
+                  tar_dict[span] != '--NME--')
+    dis_tar_total = sum(1 for span in tar_dict
+                        if tar_dict[span] != '--NME--')
+    dis_ref_total = sum(1 for span in ref_dict
+                        if ref_dict[span] != '--NME--')
+    reg_correct = sum(1 for span in tar_dict 
                        if span in ref_dict)
-    span_wrong = sum(1 for span in tar_dict 
-                       if span not in ref_dict)
     fname = os.path.basename(tar)
-    records.append((fname, correct, wrong, span_correct, span_wrong, len(ref_dict)))
+    records.append((fname, dis_correct, dis_tar_total, dis_ref_total, reg_correct, len(tar_dict), len(ref_dict)))
     
     
 def eval_log(log_path):
@@ -136,50 +136,51 @@ def div(a, b):
     return a/float(b)
 
 
-def compute(correct, wrong, span_correct, span_wrong, ref_count):
-    p = div(correct, correct + wrong) # precision
-    r = div(correct, ref_count) # recall
-    sp = div(span_correct, span_correct + span_wrong) # span precision
-    sr = div(span_correct, ref_count) # span recall
-    return p, r, sp, sr
+def compute(dis_correct, dis_tar_total, dis_ref_total, reg_correct, reg_tar_total, reg_ref_total):
+    dis_p = div(dis_correct, dis_tar_total) # precision
+    dis_r = div(dis_correct, dis_ref_total) # recall
+    dis_f1 = 2 / (1/dis_p + 1/dis_r) if dis_correct > 0 else 0
+    reg_p = div(reg_correct, reg_tar_total) # span precision
+    reg_r = div(reg_correct, reg_ref_total) # span recall
+    reg_f1 = 2 / (1/reg_p + 1/reg_r) if reg_correct > 0 else 0
+    return dis_p, dis_r, dis_f1, reg_p, reg_r, reg_f1
     
 
 def write_detailed_report(path):
     _log.info("Writing detailed report...")
     with open(path, "wt") as f:
-        f.write("fname\tcorrect\twrong\tspan_correct\tspan_wrong\t"
-                "ref_count\tprecision\trecall\tspan_prec\tspan_recall\n")
-        for fname, correct, wrong, span_correct, span_wrong, ref_count in records:
-            p, r, sp, sr = compute(correct, wrong, span_correct, span_wrong, ref_count)
+        f.write("fname\tdis_correct\tdis_tar\tdis_ref\treg_correct\treg_tar\t"
+                "reg_ref\tdis_p\tdis_r\tdis_f1\treg_p\treg_r\tref_f1\n")
+        for fname, dis_correct, dis_tar, dis_ref, reg_correct, reg_tar, reg_ref in records:
+            dis_p, dis_r, dis_f1, reg_p, reg_r, reg_f1 = \
+                    compute(dis_correct, dis_tar, dis_ref, reg_correct, reg_tar, reg_ref)
             f.write("%(fname)s\t"
-                    "%(correct)d\t%(wrong)d\t%(span_correct)d\t%(span_wrong)d\t"
-                    "%(ref_count)s\t%(p)f\t%(r)f\t%(sp)f\t%(sr)f\n" %locals())
+                    "%(dis_correct)d\t%(dis_tar)d\t%(dis_ref)d\t%(reg_correct)d\t"
+                    "%(reg_tar)d\t%(reg_ref)d\t%(dis_p)f\t%(dis_r)f\t%(dis_f1)f\t"
+                    "%(reg_p)f\t%(reg_r)f\t%(reg_f1)f\n" %locals())
     _log.info("Detailed report written to %s" %os.path.abspath(path))
 
 
 def write_summarized_report_to_stream(f):
-    f.write("type\ttotal_correct\ttotal_wrong\ttotal_span_correct\ttotal_span_wrong\t"
-            "total_ref_count\ttotal_precision\ttotal_recall\ttotal_span_prec\ttotal_span_recall\n")
-    _, correct, wrong, span_correct, span_wrong, ref_count = zip(*records)
-    total_correct = sum(correct)
-    total_wrong = sum(wrong)
-    total_span_correct = sum(span_correct)
-    total_span_wrong = sum(span_wrong)
-    total_ref_count = sum(ref_count)
-    total_p, total_r, total_sp, total_sr = compute(total_correct, total_wrong, 
-                                                   total_span_correct, 
-                                                   total_span_wrong, 
-                                                   total_ref_count)
-    f.write("micro\t%(total_correct)d\t%(total_wrong)d\t%(total_span_correct)d\t%(total_span_wrong)d\t"
-            "%(total_ref_count)s\t%(total_p)f\t%(total_r)f\t%(total_sp)f\t%(total_sr)f\n" %locals())
+    f.write("type\tdis_correct\tdis_tar\tdis_ref\treg_correct\treg_tar\t"
+                "reg_ref\tdis_p\tdis_r\tdis_f1\treg_p\treg_r\tref_f1\n")
+    cols = zip(*records)[1:]
+    sums = tuple(sum(col) for col in cols)
+    dis_correct, dis_tar, dis_ref, reg_correct, reg_tar, reg_ref = sums
+    dis_p, dis_r, dis_f1, reg_p, reg_r, reg_f1 = \
+            compute(dis_correct, dis_tar, dis_ref, reg_correct, reg_tar, reg_ref)
+    f.write("micro\t"
+            "%(dis_correct)d\t%(dis_tar)d\t%(dis_ref)d\t%(reg_correct)d\t"
+            "%(reg_tar)d\t%(reg_ref)d\t%(dis_p)f\t%(dis_r)f\t%(dis_f1)f\t"
+            "%(reg_p)f\t%(reg_r)f\t%(reg_f1)f\n" %locals())
     
-    pr = [compute(correct, wrong, span_correct, span_wrong, ref_count)
-          for _, correct, wrong, span_correct, span_wrong, ref_count in records]
-    p, r, sp, sr = zip(*pr)
-    total_p, total_r, total_sp, total_sr = (sum(p)/len(p), sum(r)/len(r),
-                                            sum(sp)/len(sp), sum(sr)/len(sr))
-    f.write("macro\t\t\t\t\t"
-            "\t%(total_p)f\t%(total_r)f\t%(total_sp)f\t%(total_sr)f\n" %locals())
+    rows = [compute(*r[1:]) for r in records]
+    cols = zip(*rows)
+    avgs = tuple(sum(col)/len(rows) for col in cols)
+    dis_p, dis_r, dis_f1, reg_p, reg_r, reg_f1 = avgs
+    f.write("macro\t\t\t\t\t\t\t"
+            "%(dis_p)f\t%(dis_r)f\t%(dis_f1)f\t"
+            "%(reg_p)f\t%(reg_r)f\t%(reg_f1)f\n" %locals())
     
 
 def write_summarized_report(path):
