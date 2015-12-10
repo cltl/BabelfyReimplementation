@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>While Apple is an electronics company , Mango is a clothing one and Orange is a communication one .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">While</wf>
+    <wf id="w2" length="5" offset="5" sent="1">Apple</wf>
+    <wf id="w3" length="2" offset="11" sent="1">is</wf>
+    <wf id="w4" length="2" offset="14" sent="1">an</wf>
+    <wf id="w5" length="11" offset="17" sent="1">electronics</wf>
+    <wf id="w6" length="7" offset="29" sent="1">company</wf>
+    <wf id="w7" length="1" offset="37" sent="1">,</wf>
+    <wf id="w8" length="5" offset="39" sent="1">Mango</wf>
+    <wf id="w9" length="2" offset="45" sent="1">is</wf>
+    <wf id="w10" length="1" offset="48" sent="1">a</wf>
+    <wf id="w11" length="8" offset="50" sent="1">clothing</wf>
+    <wf id="w12" length="3" offset="59" sent="1">one</wf>
+    <wf id="w13" length="3" offset="63" sent="1">and</wf>
+    <wf id="w14" length="6" offset="67" sent="1">Orange</wf>
+    <wf id="w15" length="2" offset="74" sent="1">is</wf>
+    <wf id="w16" length="1" offset="77" sent="1">a</wf>
+    <wf id="w17" length="13" offset="79" sent="1">communication</wf>
+    <wf id="w18" length="3" offset="93" sent="1">one</wf>
+    <wf id="w19" length="1" offset="97" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t2"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Apple_Inc." resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t8"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Mango_(clothing)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t14"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Orange_(telecommunications)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

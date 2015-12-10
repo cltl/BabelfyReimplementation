@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>City won 3:2 against the Spurs .</raw>
+  <text>
+    <wf id="w1" length="4" offset="0" sent="1">City</wf>
+    <wf id="w2" length="3" offset="4" sent="1">won</wf>
+    <wf id="w3" length="3" offset="8" sent="1">3:2</wf>
+    <wf id="w4" length="7" offset="12" sent="1">against</wf>
+    <wf id="w5" length="3" offset="20" sent="1">the</wf>
+    <wf id="w6" length="5" offset="24" sent="1">Spurs</wf>
+    <wf id="w7" length="1" offset="30" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Manchester_City_F.C." resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t6"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Tottenham_Hotspur_F.C." resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

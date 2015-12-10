@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Steve , Bill , Sergey , and Larry have drawn a great deal of admiration these days for their pioneering successes that changed the world we live in .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Steve</wf>
+    <wf id="w2" length="1" offset="5" sent="1">,</wf>
+    <wf id="w3" length="4" offset="7" sent="1">Bill</wf>
+    <wf id="w4" length="1" offset="12" sent="1">,</wf>
+    <wf id="w5" length="6" offset="14" sent="1">Sergey</wf>
+    <wf id="w6" length="1" offset="21" sent="1">,</wf>
+    <wf id="w7" length="3" offset="23" sent="1">and</wf>
+    <wf id="w8" length="5" offset="27" sent="1">Larry</wf>
+    <wf id="w9" length="4" offset="33" sent="1">have</wf>
+    <wf id="w10" length="5" offset="38" sent="1">drawn</wf>
+    <wf id="w11" length="1" offset="44" sent="1">a</wf>
+    <wf id="w12" length="5" offset="46" sent="1">great</wf>
+    <wf id="w13" length="4" offset="52" sent="1">deal</wf>
+    <wf id="w14" length="2" offset="57" sent="1">of</wf>
+    <wf id="w15" length="10" offset="60" sent="1">admiration</wf>
+    <wf id="w16" length="5" offset="71" sent="1">these</wf>
+    <wf id="w17" length="4" offset="77" sent="1">days</wf>
+    <wf id="w18" length="3" offset="82" sent="1">for</wf>
+    <wf id="w19" length="5" offset="86" sent="1">their</wf>
+    <wf id="w20" length="10" offset="92" sent="1">pioneering</wf>
+    <wf id="w21" length="9" offset="103" sent="1">successes</wf>
+    <wf id="w22" length="4" offset="113" sent="1">that</wf>
+    <wf id="w23" length="7" offset="118" sent="1">changed</wf>
+    <wf id="w24" length="3" offset="126" sent="1">the</wf>
+    <wf id="w25" length="5" offset="130" sent="1">world</wf>
+    <wf id="w26" length="2" offset="136" sent="1">we</wf>
+    <wf id="w27" length="4" offset="139" sent="1">live</wf>
+    <wf id="w28" length="2" offset="144" sent="1">in</wf>
+    <wf id="w29" length="1" offset="147" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+    <term id="t29">
+      <span>
+        <target id="w29"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Steve_Jobs" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Bill_Gates" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Sergey_Brin" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t8"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Larry_Page" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

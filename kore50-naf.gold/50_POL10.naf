@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Kennedy was also an active politician , yet he is most known for his writings , some of which he published under the name of Mark Littleton .</raw>
+  <text>
+    <wf id="w1" length="7" offset="0" sent="1">Kennedy</wf>
+    <wf id="w2" length="3" offset="7" sent="1">was</wf>
+    <wf id="w3" length="4" offset="11" sent="1">also</wf>
+    <wf id="w4" length="2" offset="16" sent="1">an</wf>
+    <wf id="w5" length="6" offset="19" sent="1">active</wf>
+    <wf id="w6" length="10" offset="26" sent="1">politician</wf>
+    <wf id="w7" length="1" offset="37" sent="1">,</wf>
+    <wf id="w8" length="3" offset="39" sent="1">yet</wf>
+    <wf id="w9" length="2" offset="43" sent="1">he</wf>
+    <wf id="w10" length="2" offset="46" sent="1">is</wf>
+    <wf id="w11" length="4" offset="49" sent="1">most</wf>
+    <wf id="w12" length="5" offset="54" sent="1">known</wf>
+    <wf id="w13" length="3" offset="60" sent="1">for</wf>
+    <wf id="w14" length="3" offset="64" sent="1">his</wf>
+    <wf id="w15" length="8" offset="68" sent="1">writings</wf>
+    <wf id="w16" length="1" offset="77" sent="1">,</wf>
+    <wf id="w17" length="4" offset="79" sent="1">some</wf>
+    <wf id="w18" length="2" offset="84" sent="1">of</wf>
+    <wf id="w19" length="5" offset="87" sent="1">which</wf>
+    <wf id="w20" length="2" offset="93" sent="1">he</wf>
+    <wf id="w21" length="9" offset="96" sent="1">published</wf>
+    <wf id="w22" length="5" offset="106" sent="1">under</wf>
+    <wf id="w23" length="3" offset="112" sent="1">the</wf>
+    <wf id="w24" length="4" offset="116" sent="1">name</wf>
+    <wf id="w25" length="2" offset="121" sent="1">of</wf>
+    <wf id="w26" length="4" offset="124" sent="1">Mark</wf>
+    <wf id="w27" length="9" offset="129" sent="1">Littleton</wf>
+    <wf id="w28" length="1" offset="139" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="John_P._Kennedy" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

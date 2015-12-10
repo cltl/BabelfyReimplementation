@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
 encoding//evaluation/convert.py=utf-8
+encoding//evaluation/run.py=utf-8
 encoding/candidates.py=utf-8
+encoding/disambiguate.py=utf-8

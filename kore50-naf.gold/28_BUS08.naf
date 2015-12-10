@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Pixar produced Cars , and John directed it .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Pixar</wf>
+    <wf id="w2" length="8" offset="5" sent="1">produced</wf>
+    <wf id="w3" length="4" offset="14" sent="1">Cars</wf>
+    <wf id="w4" length="1" offset="19" sent="1">,</wf>
+    <wf id="w5" length="3" offset="21" sent="1">and</wf>
+    <wf id="w6" length="4" offset="25" sent="1">John</wf>
+    <wf id="w7" length="8" offset="30" sent="1">directed</wf>
+    <wf id="w8" length="2" offset="39" sent="1">it</wf>
+    <wf id="w9" length="1" offset="42" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Pixar" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Cars_(film)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t6"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="John_Lasseter" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

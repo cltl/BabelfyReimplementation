@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Paris and Kim are both wealthy It Girls who had sex tapes on the Internet .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Paris</wf>
+    <wf id="w2" length="3" offset="5" sent="1">and</wf>
+    <wf id="w3" length="3" offset="9" sent="1">Kim</wf>
+    <wf id="w4" length="3" offset="13" sent="1">are</wf>
+    <wf id="w5" length="4" offset="17" sent="1">both</wf>
+    <wf id="w6" length="7" offset="22" sent="1">wealthy</wf>
+    <wf id="w7" length="2" offset="30" sent="1">It</wf>
+    <wf id="w8" length="5" offset="33" sent="1">Girls</wf>
+    <wf id="w9" length="3" offset="39" sent="1">who</wf>
+    <wf id="w10" length="3" offset="43" sent="1">had</wf>
+    <wf id="w11" length="3" offset="47" sent="1">sex</wf>
+    <wf id="w12" length="5" offset="51" sent="1">tapes</wf>
+    <wf id="w13" length="2" offset="57" sent="1">on</wf>
+    <wf id="w14" length="3" offset="60" sent="1">the</wf>
+    <wf id="w15" length="8" offset="64" sent="1">Internet</wf>
+    <wf id="w16" length="1" offset="73" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Paris_Hilton" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Kim_Kardashian" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Allen founded the EMP in Seattle , which featured exhibitions about Hendrix and Dylan , but also about various science fiction movies .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Allen</wf>
+    <wf id="w2" length="7" offset="5" sent="1">founded</wf>
+    <wf id="w3" length="3" offset="13" sent="1">the</wf>
+    <wf id="w4" length="3" offset="17" sent="1">EMP</wf>
+    <wf id="w5" length="2" offset="21" sent="1">in</wf>
+    <wf id="w6" length="7" offset="24" sent="1">Seattle</wf>
+    <wf id="w7" length="1" offset="32" sent="1">,</wf>
+    <wf id="w8" length="5" offset="34" sent="1">which</wf>
+    <wf id="w9" length="8" offset="40" sent="1">featured</wf>
+    <wf id="w10" length="11" offset="49" sent="1">exhibitions</wf>
+    <wf id="w11" length="5" offset="61" sent="1">about</wf>
+    <wf id="w12" length="7" offset="67" sent="1">Hendrix</wf>
+    <wf id="w13" length="3" offset="75" sent="1">and</wf>
+    <wf id="w14" length="5" offset="79" sent="1">Dylan</wf>
+    <wf id="w15" length="1" offset="85" sent="1">,</wf>
+    <wf id="w16" length="3" offset="87" sent="1">but</wf>
+    <wf id="w17" length="4" offset="91" sent="1">also</wf>
+    <wf id="w18" length="5" offset="96" sent="1">about</wf>
+    <wf id="w19" length="7" offset="102" sent="1">various</wf>
+    <wf id="w20" length="7" offset="110" sent="1">science</wf>
+    <wf id="w21" length="7" offset="118" sent="1">fiction</wf>
+    <wf id="w22" length="6" offset="126" sent="1">movies</wf>
+    <wf id="w23" length="1" offset="133" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Paul_Allen" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t4"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="EMP_Museum" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t6"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Seattle" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t12"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Jimi_Hendrix" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t5">
+      <references>
+        <span>
+          <target id="t14"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Bob_Dylan" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

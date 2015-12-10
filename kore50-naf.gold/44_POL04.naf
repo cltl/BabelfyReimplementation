@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>The RAF was a terrorist group led by Baader and Meinhof that killed Schleyer .&#65279;</raw>
+  <text>
+    <wf id="w1" length="3" offset="0" sent="1">The</wf>
+    <wf id="w2" length="3" offset="3" sent="1">RAF</wf>
+    <wf id="w3" length="3" offset="7" sent="1">was</wf>
+    <wf id="w4" length="1" offset="11" sent="1">a</wf>
+    <wf id="w5" length="9" offset="13" sent="1">terrorist</wf>
+    <wf id="w6" length="5" offset="23" sent="1">group</wf>
+    <wf id="w7" length="3" offset="29" sent="1">led</wf>
+    <wf id="w8" length="2" offset="33" sent="1">by</wf>
+    <wf id="w9" length="6" offset="36" sent="1">Baader</wf>
+    <wf id="w10" length="3" offset="43" sent="1">and</wf>
+    <wf id="w11" length="7" offset="47" sent="1">Meinhof</wf>
+    <wf id="w12" length="4" offset="55" sent="1">that</wf>
+    <wf id="w13" length="6" offset="60" sent="1">killed</wf>
+    <wf id="w14" length="8" offset="67" sent="1">Schleyer</wf>
+    <wf id="w15" length="2" offset="76" sent="1">.&#65279;</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t2"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Red_Army_Faction" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t9"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Andreas_Baader" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t11"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Ulrike_Meinhof" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t14"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Hanns-Martin_Schleyer" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Tiger lost the US Open .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Tiger</wf>
+    <wf id="w2" length="4" offset="5" sent="1">lost</wf>
+    <wf id="w3" length="3" offset="10" sent="1">the</wf>
+    <wf id="w4" length="2" offset="14" sent="1">US</wf>
+    <wf id="w5" length="4" offset="17" sent="1">Open</wf>
+    <wf id="w6" length="1" offset="22" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Tiger_Woods" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t4"/>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="U.S._Open_(golf)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

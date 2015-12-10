@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>After unsuccessful years , aging country star Cash made a grandiose comeback with his American Recordings , recorded at his home with the help of Rubin .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">After</wf>
+    <wf id="w2" length="12" offset="5" sent="1">unsuccessful</wf>
+    <wf id="w3" length="5" offset="18" sent="1">years</wf>
+    <wf id="w4" length="1" offset="24" sent="1">,</wf>
+    <wf id="w5" length="5" offset="26" sent="1">aging</wf>
+    <wf id="w6" length="7" offset="32" sent="1">country</wf>
+    <wf id="w7" length="4" offset="40" sent="1">star</wf>
+    <wf id="w8" length="4" offset="45" sent="1">Cash</wf>
+    <wf id="w9" length="4" offset="50" sent="1">made</wf>
+    <wf id="w10" length="1" offset="55" sent="1">a</wf>
+    <wf id="w11" length="9" offset="57" sent="1">grandiose</wf>
+    <wf id="w12" length="8" offset="67" sent="1">comeback</wf>
+    <wf id="w13" length="4" offset="76" sent="1">with</wf>
+    <wf id="w14" length="3" offset="81" sent="1">his</wf>
+    <wf id="w15" length="19" offset="85" sent="1">American Recordings</wf>
+    <wf id="w16" length="1" offset="105" sent="1">,</wf>
+    <wf id="w17" length="8" offset="107" sent="1">recorded</wf>
+    <wf id="w18" length="2" offset="116" sent="1">at</wf>
+    <wf id="w19" length="3" offset="119" sent="1">his</wf>
+    <wf id="w20" length="4" offset="123" sent="1">home</wf>
+    <wf id="w21" length="4" offset="128" sent="1">with</wf>
+    <wf id="w22" length="3" offset="133" sent="1">the</wf>
+    <wf id="w23" length="4" offset="137" sent="1">help</wf>
+    <wf id="w24" length="2" offset="142" sent="1">of</wf>
+    <wf id="w25" length="5" offset="145" sent="1">Rubin</wf>
+    <wf id="w26" length="1" offset="151" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t8"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Johnny_Cash" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t15"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="American_Recordings_(album)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t25"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Rick_Rubin" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

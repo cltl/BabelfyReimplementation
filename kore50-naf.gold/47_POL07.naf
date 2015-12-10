@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Erich was born in Neunkirchen .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">Erich</wf>
+    <wf id="w2" length="3" offset="5" sent="1">was</wf>
+    <wf id="w3" length="4" offset="9" sent="1">born</wf>
+    <wf id="w4" length="2" offset="14" sent="1">in</wf>
+    <wf id="w5" length="11" offset="17" sent="1">Neunkirchen</wf>
+    <wf id="w6" length="1" offset="29" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Erich_Honecker" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Neunkirchen,_Saarland" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

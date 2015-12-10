@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>The Enola Gay bombed Hiroshima at the end of Second World War .&#65279;</raw>
+  <text>
+    <wf id="w1" length="3" offset="0" sent="1">The</wf>
+    <wf id="w2" length="5" offset="3" sent="1">Enola</wf>
+    <wf id="w3" length="3" offset="9" sent="1">Gay</wf>
+    <wf id="w4" length="6" offset="13" sent="1">bombed</wf>
+    <wf id="w5" length="9" offset="20" sent="1">Hiroshima</wf>
+    <wf id="w6" length="2" offset="30" sent="1">at</wf>
+    <wf id="w7" length="3" offset="33" sent="1">the</wf>
+    <wf id="w8" length="3" offset="37" sent="1">end</wf>
+    <wf id="w9" length="2" offset="41" sent="1">of</wf>
+    <wf id="w10" length="6" offset="44" sent="1">Second</wf>
+    <wf id="w11" length="5" offset="51" sent="1">World</wf>
+    <wf id="w12" length="3" offset="57" sent="1">War</wf>
+    <wf id="w13" length="2" offset="61" sent="1">.&#65279;</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t2"/>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Enola_Gay" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Hiroshima" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t10"/>
+          <target id="t11"/>
+          <target id="t12"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="World_War_II" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

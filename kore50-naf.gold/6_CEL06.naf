@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>In this musical , Madonna played the role of the First Lady .</raw>
+  <text>
+    <wf id="w1" length="2" offset="0" sent="1">In</wf>
+    <wf id="w2" length="4" offset="2" sent="1">this</wf>
+    <wf id="w3" length="7" offset="7" sent="1">musical</wf>
+    <wf id="w4" length="1" offset="15" sent="1">,</wf>
+    <wf id="w5" length="7" offset="17" sent="1">Madonna</wf>
+    <wf id="w6" length="6" offset="25" sent="1">played</wf>
+    <wf id="w7" length="3" offset="32" sent="1">the</wf>
+    <wf id="w8" length="4" offset="36" sent="1">role</wf>
+    <wf id="w9" length="2" offset="41" sent="1">of</wf>
+    <wf id="w10" length="3" offset="44" sent="1">the</wf>
+    <wf id="w11" length="5" offset="48" sent="1">First</wf>
+    <wf id="w12" length="4" offset="54" sent="1">Lady</wf>
+    <wf id="w13" length="1" offset="59" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Madonna_(entertainer)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t11"/>
+          <target id="t12"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="First_Lady_of_Argentina" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Angelina , her father Jon , and her partner Brad never played together in the same movie .</raw>
+  <text>
+    <wf id="w1" length="8" offset="0" sent="1">Angelina</wf>
+    <wf id="w2" length="1" offset="8" sent="1">,</wf>
+    <wf id="w3" length="3" offset="10" sent="1">her</wf>
+    <wf id="w4" length="6" offset="14" sent="1">father</wf>
+    <wf id="w5" length="3" offset="21" sent="1">Jon</wf>
+    <wf id="w6" length="1" offset="25" sent="1">,</wf>
+    <wf id="w7" length="3" offset="27" sent="1">and</wf>
+    <wf id="w8" length="3" offset="31" sent="1">her</wf>
+    <wf id="w9" length="7" offset="35" sent="1">partner</wf>
+    <wf id="w10" length="4" offset="43" sent="1">Brad</wf>
+    <wf id="w11" length="5" offset="48" sent="1">never</wf>
+    <wf id="w12" length="6" offset="54" sent="1">played</wf>
+    <wf id="w13" length="8" offset="61" sent="1">together</wf>
+    <wf id="w14" length="2" offset="70" sent="1">in</wf>
+    <wf id="w15" length="3" offset="73" sent="1">the</wf>
+    <wf id="w16" length="4" offset="77" sent="1">same</wf>
+    <wf id="w17" length="5" offset="82" sent="1">movie</wf>
+    <wf id="w18" length="1" offset="88" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Angelina_Jolie" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Jon_Voight" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t10"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Brad_Pitt" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

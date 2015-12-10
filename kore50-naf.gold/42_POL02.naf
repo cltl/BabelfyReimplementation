@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>The Sun and The Times reported that Greece will have to leave the Euro soon .</raw>
+  <text>
+    <wf id="w1" length="3" offset="0" sent="1">The</wf>
+    <wf id="w2" length="3" offset="3" sent="1">Sun</wf>
+    <wf id="w3" length="3" offset="7" sent="1">and</wf>
+    <wf id="w4" length="3" offset="11" sent="1">The</wf>
+    <wf id="w5" length="5" offset="15" sent="1">Times</wf>
+    <wf id="w6" length="8" offset="21" sent="1">reported</wf>
+    <wf id="w7" length="4" offset="30" sent="1">that</wf>
+    <wf id="w8" length="6" offset="35" sent="1">Greece</wf>
+    <wf id="w9" length="4" offset="42" sent="1">will</wf>
+    <wf id="w10" length="4" offset="47" sent="1">have</wf>
+    <wf id="w11" length="2" offset="52" sent="1">to</wf>
+    <wf id="w12" length="5" offset="55" sent="1">leave</wf>
+    <wf id="w13" length="3" offset="61" sent="1">the</wf>
+    <wf id="w14" length="4" offset="65" sent="1">Euro</wf>
+    <wf id="w15" length="4" offset="70" sent="1">soon</wf>
+    <wf id="w16" length="1" offset="75" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+          <target id="t2"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="The_Sun_(United_Kingdom)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t4"/>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="The_Times" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t8"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Greece" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t14"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Eurozone" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

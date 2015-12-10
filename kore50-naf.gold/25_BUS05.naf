@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Karl and Theo made their extreme fortunes selling low-price groceries .</raw>
+  <text>
+    <wf id="w1" length="4" offset="0" sent="1">Karl</wf>
+    <wf id="w2" length="3" offset="4" sent="1">and</wf>
+    <wf id="w3" length="4" offset="8" sent="1">Theo</wf>
+    <wf id="w4" length="4" offset="13" sent="1">made</wf>
+    <wf id="w5" length="5" offset="18" sent="1">their</wf>
+    <wf id="w6" length="7" offset="24" sent="1">extreme</wf>
+    <wf id="w7" length="8" offset="32" sent="1">fortunes</wf>
+    <wf id="w8" length="7" offset="41" sent="1">selling</wf>
+    <wf id="w9" length="9" offset="49" sent="1">low-price</wf>
+    <wf id="w10" length="9" offset="59" sent="1">groceries</wf>
+    <wf id="w11" length="1" offset="69" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Karl_Albrecht" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Theo_Albrecht" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

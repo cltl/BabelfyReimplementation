@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>After the death of Steve , the former CEO of Apple , his commencement speech at Stanford was watched thousands of times .</raw>
+  <text>
+    <wf id="w1" length="5" offset="0" sent="1">After</wf>
+    <wf id="w2" length="3" offset="5" sent="1">the</wf>
+    <wf id="w3" length="5" offset="9" sent="1">death</wf>
+    <wf id="w4" length="2" offset="15" sent="1">of</wf>
+    <wf id="w5" length="5" offset="18" sent="1">Steve</wf>
+    <wf id="w6" length="1" offset="24" sent="1">,</wf>
+    <wf id="w7" length="3" offset="26" sent="1">the</wf>
+    <wf id="w8" length="6" offset="30" sent="1">former</wf>
+    <wf id="w9" length="3" offset="37" sent="1">CEO</wf>
+    <wf id="w10" length="2" offset="41" sent="1">of</wf>
+    <wf id="w11" length="5" offset="44" sent="1">Apple</wf>
+    <wf id="w12" length="1" offset="50" sent="1">,</wf>
+    <wf id="w13" length="3" offset="52" sent="1">his</wf>
+    <wf id="w14" length="12" offset="56" sent="1">commencement</wf>
+    <wf id="w15" length="6" offset="69" sent="1">speech</wf>
+    <wf id="w16" length="2" offset="76" sent="1">at</wf>
+    <wf id="w17" length="8" offset="79" sent="1">Stanford</wf>
+    <wf id="w18" length="3" offset="88" sent="1">was</wf>
+    <wf id="w19" length="7" offset="92" sent="1">watched</wf>
+    <wf id="w20" length="9" offset="100" sent="1">thousands</wf>
+    <wf id="w21" length="2" offset="110" sent="1">of</wf>
+    <wf id="w22" length="5" offset="113" sent="1">times</wf>
+    <wf id="w23" length="1" offset="119" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Steve_Jobs" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t11"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Apple_Inc." resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t17"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Stanford_University" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

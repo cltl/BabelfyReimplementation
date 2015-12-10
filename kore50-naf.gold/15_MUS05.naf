@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Despite featuring some of the most promininent musicians of their decade --- like Sinatra , Dylan , Joel , and Santana --- Columbia was aquired by Sony in the 1980s .</raw>
+  <text>
+    <wf id="w1" length="7" offset="0" sent="1">Despite</wf>
+    <wf id="w2" length="9" offset="7" sent="1">featuring</wf>
+    <wf id="w3" length="4" offset="17" sent="1">some</wf>
+    <wf id="w4" length="2" offset="22" sent="1">of</wf>
+    <wf id="w5" length="3" offset="25" sent="1">the</wf>
+    <wf id="w6" length="4" offset="29" sent="1">most</wf>
+    <wf id="w7" length="11" offset="34" sent="1">promininent</wf>
+    <wf id="w8" length="9" offset="46" sent="1">musicians</wf>
+    <wf id="w9" length="2" offset="56" sent="1">of</wf>
+    <wf id="w10" length="5" offset="59" sent="1">their</wf>
+    <wf id="w11" length="6" offset="65" sent="1">decade</wf>
+    <wf id="w12" length="3" offset="72" sent="1">---</wf>
+    <wf id="w13" length="4" offset="76" sent="1">like</wf>
+    <wf id="w14" length="7" offset="81" sent="1">Sinatra</wf>
+    <wf id="w15" length="1" offset="89" sent="1">,</wf>
+    <wf id="w16" length="5" offset="91" sent="1">Dylan</wf>
+    <wf id="w17" length="1" offset="97" sent="1">,</wf>
+    <wf id="w18" length="4" offset="99" sent="1">Joel</wf>
+    <wf id="w19" length="1" offset="104" sent="1">,</wf>
+    <wf id="w20" length="3" offset="106" sent="1">and</wf>
+    <wf id="w21" length="7" offset="110" sent="1">Santana</wf>
+    <wf id="w22" length="3" offset="118" sent="1">---</wf>
+    <wf id="w23" length="8" offset="122" sent="1">Columbia</wf>
+    <wf id="w24" length="3" offset="131" sent="1">was</wf>
+    <wf id="w25" length="7" offset="135" sent="1">aquired</wf>
+    <wf id="w26" length="2" offset="143" sent="1">by</wf>
+    <wf id="w27" length="4" offset="146" sent="1">Sony</wf>
+    <wf id="w28" length="2" offset="151" sent="1">in</wf>
+    <wf id="w29" length="3" offset="154" sent="1">the</wf>
+    <wf id="w30" length="5" offset="158" sent="1">1980s</wf>
+    <wf id="w31" length="1" offset="164" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+    <term id="t29">
+      <span>
+        <target id="w29"/>
+      </span>
+    </term>
+    <term id="t30">
+      <span>
+        <target id="w30"/>
+      </span>
+    </term>
+    <term id="t31">
+      <span>
+        <target id="w31"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t14"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Frank_Sinatra" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t16"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Bob_Dylan" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t18"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Billy_Joel" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t21"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Carlos_Santana" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t5">
+      <references>
+        <span>
+          <target id="t23"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Columbia_Records" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t6">
+      <references>
+        <span>
+          <target id="t27"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Sony_Music_Entertainment" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

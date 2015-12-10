@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Desire contains a duet with Harris in the song Joey .</raw>
+  <text>
+    <wf id="w1" length="6" offset="0" sent="1">Desire</wf>
+    <wf id="w2" length="8" offset="6" sent="1">contains</wf>
+    <wf id="w3" length="1" offset="15" sent="1">a</wf>
+    <wf id="w4" length="4" offset="17" sent="1">duet</wf>
+    <wf id="w5" length="4" offset="22" sent="1">with</wf>
+    <wf id="w6" length="6" offset="27" sent="1">Harris</wf>
+    <wf id="w7" length="2" offset="34" sent="1">in</wf>
+    <wf id="w8" length="3" offset="37" sent="1">the</wf>
+    <wf id="w9" length="4" offset="41" sent="1">song</wf>
+    <wf id="w10" length="4" offset="46" sent="1">Joey</wf>
+    <wf id="w11" length="1" offset="51" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Desire_(Bob_Dylan_album)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t6"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Emmylou_Harris" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t10"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Joey_(Bob_Dylan_song)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

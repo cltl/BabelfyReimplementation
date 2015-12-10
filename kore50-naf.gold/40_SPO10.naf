@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Hertha won against Dortmund .</raw>
+  <text>
+    <wf id="w1" length="6" offset="0" sent="1">Hertha</wf>
+    <wf id="w2" length="3" offset="6" sent="1">won</wf>
+    <wf id="w3" length="7" offset="10" sent="1">against</wf>
+    <wf id="w4" length="8" offset="18" sent="1">Dortmund</wf>
+    <wf id="w5" length="1" offset="27" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Hertha_BSC" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t4"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Borussia_Dortmund" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

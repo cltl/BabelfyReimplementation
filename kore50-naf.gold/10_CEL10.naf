@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>Justin , Stefani , and Kate are among the most popular people on both MTV and Twitter .</raw>
+  <text>
+    <wf id="w1" length="6" offset="0" sent="1">Justin</wf>
+    <wf id="w2" length="1" offset="6" sent="1">,</wf>
+    <wf id="w3" length="7" offset="8" sent="1">Stefani</wf>
+    <wf id="w4" length="1" offset="16" sent="1">,</wf>
+    <wf id="w5" length="3" offset="18" sent="1">and</wf>
+    <wf id="w6" length="4" offset="22" sent="1">Kate</wf>
+    <wf id="w7" length="3" offset="27" sent="1">are</wf>
+    <wf id="w8" length="5" offset="31" sent="1">among</wf>
+    <wf id="w9" length="3" offset="37" sent="1">the</wf>
+    <wf id="w10" length="4" offset="41" sent="1">most</wf>
+    <wf id="w11" length="7" offset="46" sent="1">popular</wf>
+    <wf id="w12" length="6" offset="54" sent="1">people</wf>
+    <wf id="w13" length="2" offset="61" sent="1">on</wf>
+    <wf id="w14" length="4" offset="64" sent="1">both</wf>
+    <wf id="w15" length="3" offset="69" sent="1">MTV</wf>
+    <wf id="w16" length="3" offset="73" sent="1">and</wf>
+    <wf id="w17" length="7" offset="77" sent="1">Twitter</wf>
+    <wf id="w18" length="1" offset="85" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Justin_Bieber" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t3"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Lady_gaga" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t6"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Kate_Perry" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t15"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="MTV" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t5">
+      <references>
+        <span>
+          <target id="t17"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Twitter" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

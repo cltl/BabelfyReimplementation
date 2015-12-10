@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>The group formed by Homme , Grohl , and Jones was supposed to be named Caligula , but the name was already taken.</raw>
+  <text>
+    <wf id="w1" length="3" offset="0" sent="1">The</wf>
+    <wf id="w2" length="5" offset="3" sent="1">group</wf>
+    <wf id="w3" length="6" offset="9" sent="1">formed</wf>
+    <wf id="w4" length="2" offset="16" sent="1">by</wf>
+    <wf id="w5" length="5" offset="19" sent="1">Homme</wf>
+    <wf id="w6" length="1" offset="25" sent="1">,</wf>
+    <wf id="w7" length="5" offset="27" sent="1">Grohl</wf>
+    <wf id="w8" length="1" offset="33" sent="1">,</wf>
+    <wf id="w9" length="3" offset="35" sent="1">and</wf>
+    <wf id="w10" length="5" offset="39" sent="1">Jones</wf>
+    <wf id="w11" length="3" offset="45" sent="1">was</wf>
+    <wf id="w12" length="8" offset="49" sent="1">supposed</wf>
+    <wf id="w13" length="2" offset="58" sent="1">to</wf>
+    <wf id="w14" length="2" offset="61" sent="1">be</wf>
+    <wf id="w15" length="5" offset="64" sent="1">named</wf>
+    <wf id="w16" length="8" offset="70" sent="1">Caligula</wf>
+    <wf id="w17" length="1" offset="79" sent="1">,</wf>
+    <wf id="w18" length="3" offset="81" sent="1">but</wf>
+    <wf id="w19" length="3" offset="85" sent="1">the</wf>
+    <wf id="w20" length="4" offset="89" sent="1">name</wf>
+    <wf id="w21" length="3" offset="94" sent="1">was</wf>
+    <wf id="w22" length="7" offset="98" sent="1">already</wf>
+    <wf id="w23" length="6" offset="106" sent="1">taken.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t5"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Josh_Homme" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t7"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Dave_Grohl" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t10"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="John_Paul_Jones_(musician)" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>

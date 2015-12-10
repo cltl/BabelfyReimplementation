@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='ASCII'?>
+<NAF xml:lang="en" version="1.0">
+  <nafHeader/>
+  <fileDesc creationtime="2015-06-10"/>
+  <raw>In 1980 , Steve dropped out of Stanford to join Microsoft , the company behind the Windows operating system .</raw>
+  <text>
+    <wf id="w1" length="2" offset="0" sent="1">In</wf>
+    <wf id="w2" length="4" offset="2" sent="1">1980</wf>
+    <wf id="w3" length="1" offset="7" sent="1">,</wf>
+    <wf id="w4" length="5" offset="9" sent="1">Steve</wf>
+    <wf id="w5" length="7" offset="15" sent="1">dropped</wf>
+    <wf id="w6" length="3" offset="23" sent="1">out</wf>
+    <wf id="w7" length="2" offset="27" sent="1">of</wf>
+    <wf id="w8" length="8" offset="30" sent="1">Stanford</wf>
+    <wf id="w9" length="2" offset="39" sent="1">to</wf>
+    <wf id="w10" length="4" offset="42" sent="1">join</wf>
+    <wf id="w11" length="9" offset="47" sent="1">Microsoft</wf>
+    <wf id="w12" length="1" offset="57" sent="1">,</wf>
+    <wf id="w13" length="3" offset="59" sent="1">the</wf>
+    <wf id="w14" length="7" offset="63" sent="1">company</wf>
+    <wf id="w15" length="6" offset="71" sent="1">behind</wf>
+    <wf id="w16" length="3" offset="78" sent="1">the</wf>
+    <wf id="w17" length="7" offset="82" sent="1">Windows</wf>
+    <wf id="w18" length="9" offset="90" sent="1">operating</wf>
+    <wf id="w19" length="6" offset="100" sent="1">system</wf>
+    <wf id="w20" length="1" offset="107" sent="1">.</wf>
+  </text>
+  <terms>
+    <term id="t1">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+  </terms>
+  <entities>
+    <entity id="t1">
+      <references>
+        <span>
+          <target id="t4"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Steve_Ballmer" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t2">
+      <references>
+        <span>
+          <target id="t8"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Stanford_University" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t3">
+      <references>
+        <span>
+          <target id="t11"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Microsoft" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+    <entity id="t4">
+      <references>
+        <span>
+          <target id="t17"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef reference="Microsoft_Windows" resource="AIDA"/>
+      </externalReferences>
+    </entity>
+  </entities>
+</NAF>
