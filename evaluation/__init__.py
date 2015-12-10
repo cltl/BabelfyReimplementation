@@ -53,7 +53,7 @@ def get_tids(entity_elem, root):
         term_elem = root.xpath(".//term[@id='%s']" %term_id)[0]
         for word_target_elem in term_elem.iter("target"):
             word_id = word_target_elem.get('id')
-	    words.append(int(word_id.replace("w", "").replace("t", "")))
+            words.append(int(word_id.replace("w", "").replace("t", "")))
     start = min(x for x in words)
     end = max(x for x in words)
     print "STARTEND", start, end
@@ -66,7 +66,7 @@ def get_extrefs(path, resource):
     for entity_elem in root.iter("entity"):
         ref = get_best_ref(entity_elem, resource)
         if ref:
-	    ref=ref.replace("http://dbpedia.org/resource/", "").replace("http://DBpedia.org/resource/", "")
+            ref=ref.replace("http://dbpedia.org/resource/", "").replace("http://DBpedia.org/resource/", "")
             span = get_tids(entity_elem, root)
             yield (span, ref)
         

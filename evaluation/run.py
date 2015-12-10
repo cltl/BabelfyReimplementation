@@ -16,7 +16,7 @@ from logging.config import fileConfig
 # ref = (None, 
 #        aida_path, 
 #        kore50_path)
-ref = ('AIDA', '/home/fii800/kore50-naf.gold.raw')
+ref = ('AIDA', 'kore50-naf.gold')
 
 # put your targets here
 # each target should be a *TUPLE* of a resource label and directories storing
@@ -28,7 +28,7 @@ ref = ('AIDA', '/home/fii800/kore50-naf.gold.raw')
 # targets = (('AIDA', 
 #             'evaluation/aida-conll-naf.gold', 
 #             'evaluation/kore50-naf.gold'),)
-targets = (('babelfy', '/home/fii800/proc_kore50'),)
+targets = (('babelfy', 'kore50-out'),)
 assert targets
 
 for tar in targets:
