@@ -1,6 +1,6 @@
 # BabelfyReimplementation
 
-This is the Git repository of our experiment on reimplementing Babelfy.
+This is the Git repository of our experiment on reimplementing Babelfy. We presented this at [the CLiN26 (26th Computational Linguistics in the Netherlands) conference](http://wordpress.let.vupr.nl/clin26/programme/).
 
 Setup
 ======
