@@ -29,7 +29,7 @@ Duration: 10 hours
 8. Evaluate !
  
 
-##Contact
+## Contact
   * Filip Ilievski (f.ilievski@vu.nl)
   * Minh Le Ngoc (m.n.le@vu.nl)
 
